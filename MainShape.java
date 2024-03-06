@@ -3,8 +3,8 @@ public class MainShape {
         Shape[] shapeTypes = new Shape[5];
         shapeTypes[0] = new Rectangle("black",2,3);
         shapeTypes[1] = new Circle("white",2);
-        shapeTypes[2] = new Square("pink",2,2);
-        shapeTypes[3] = new Square("grey",3,3);
+        shapeTypes[2] = new Square("pink",2);
+        shapeTypes[3] = new Square("grey",3);
         shapeTypes[4] = new Circle("pink",3.02);
         printTotal(shapeTypes);
     }
