@@ -9,9 +9,13 @@ public class MainShape {
         printTotal(shapeTypes);
     }
     public static void printTotal(Shape[] shapes){
-        for(Shape s: shapes){
-            System.out.println("The area: " + s.calculateArea());
-            System.out.println("The perimeter: " + s.calculatePerimeter());
+        double totalArea = 0;
+        double totalPeri = 0;
+        for(Shape i: shapes){
+            totalArea = totalArea + i.calculateArea();
+            totalPeri = totalPeri + i.calculatePerimeter();
         }
+        System.out.println("The total area: " + totalArea);
+        System.out.println("the total perimeter: " + totalPeri);
     }
 }
